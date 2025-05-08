@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wiedźmin 3 – najlepsza gra?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styl galerii */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Styl dla powiększonego obrazu */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        #overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        #overlay:target {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wiedźmin 3: Dziki Gon</h1>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="strona1.html">najlepsza gra?</a>
+            <a href="strona2.html">E-sport</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Dlaczego Wiedźmin 3 zdobył serca graczy na całym świecie?</h2>
+        <p>„Wiedźmin 3: Dziki Gon” to gra RPG stworzona przez polskie studio CD Projekt Red. Od premiery w 2015 roku zdobyła ponad 250 nagród „Gra Roku”. Ale co czyni ją tak wyjątkową?</p>
+
+        <h3>Otwarte, żywe uniwersum</h3>
+        <p>Świat gry jest ogromny i zróżnicowany – od mrocznych lasów Velen, przez królewskie Novigrad, aż po baśniowe Toussaint w dodatku „Krew i Wino”. Każda lokacja żyje własnym życiem.</p>
+
+        <h3>Galeria z Wiedźminem 3</h3>
+        <p>Oto kilka obrazów przedstawiających świat gry, postacie oraz sceny z Wiedźmina 3:</p>
+
+        <!-- Galeria zdjęć -->
+        <div class="gallery">
+            <a href="#img1"><img src="1.png" alt="Wiedźmin 3 - obraz 1"></a>
+            <a href="#img2"><img src="2.png" alt="Wiedźmin 3 - obraz 2"></a>
+            <a href="#img3"><img src="3.png" alt="Wiedźmin 3 - obraz 3"></a>
+            <a href="#img4"><img src="4.png" alt="Wiedźmin 3 - obraz 4"></a>
+        </div>
+
+        <!-- Powiększone zdjęcie w overlay -->
+        <div id="overlay">
+            <a href="javascript:void(0)" onclick="document.getElementById('overlay').style.display='none'">
+                <img id="img1" src="1.png" alt="Wiedźmin 3 - obraz 1">
+            </a>
+            <a href="javascript:void(0)" onclick="document.getElementById('overlay').style.display='none'">
+                <img id="img2" src="2.png" alt="Wiedźmin 3 - obraz 2">
+            </a>
+            <a href="javascript:void(0)" onclick="document.getElementById('overlay').style.display='none'">
+                <img id="img3" src="3.png" alt="Wiedźmin 3 - obraz 3">
+            </a>
+            <a href="javascript:void(0)" onclick="document.getElementById('overlay').style.display='none'">
+                <img id="img4" src="4.png" alt="Wiedźmin 3 - obraz 4">
+            </a>
+        </div>
+
+        <h2>Podsumowanie</h2>
+        <p>Dzięki połączeniu genialnej fabuły, klimatu, muzyki, rozgrywki i otwartego świata, Wiedźmin 3 to nie tylko gra – to przeżycie. Dla wielu graczy to najlepsza gra wszech czasów.</p>
+    </main>
+    <footer>
+        &copy; Autor: Artsiom Kastsiukevich 1KL
+    </footer>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz o grach</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .quiz-container {
+            max-width: 700px;
+            margin: auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            color: #00bfff;
+        }
+        button {
+            background: #00bfff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        #result {
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiz o grach komputerowych</h1>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="strona1.html">najlepsza gra?</a>
+            <a href="strona2.html">E-sport</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+
+    <main class="quiz-container">
+        <form id="quizForm">
+            <!-- 1 -->
+            <div class="question">
+                <h3>1. W której grze pojawia się postać Geralt z Rivii?</h3>
+                <input type="radio" name="q1" value="a"> Skyrim<br>
+                <input type="radio" name="q1" value="b"> Wiedźmin<br>
+                <input type="radio" name="q1" value="c"> Gothic<br>
+            </div>
+            <!-- 2 -->
+            <div class="question">
+                <h3>2. Co oznacza skrót FPS?</h3>
+                <input type="radio" name="q2" value="a"> Frames Per Second<br>
+                <input type="radio" name="q2" value="b"> Fast Play System<br>
+                <input type="radio" name="q2" value="c"> First Play Session<br>
+            </div>
+            <!-- 3 -->
+            <div class="question">
+                <h3>3. W której grze zbierasz diamenty i budujesz świat z bloków?</h3>
+                <input type="radio" name="q3" value="a"> Fortnite<br>
+                <input type="radio" name="q3" value="b"> Roblox<br>
+                <input type="radio" name="q3" value="c"> Minecraft<br>
+            </div>
+            <!-- Dodaj kolejne 12 pytań -->
+            <div class="question">
+                <h3>4. Która gra została wydana przez Rockstar Games?</h3>
+                <input type="radio" name="q4" value="a"> Cyberpunk 2077<br>
+                <input type="radio" name="q4" value="b"> GTA V<br>
+                <input type="radio" name="q4" value="c"> Valorant<br>
+            </div>
+
+            <div class="question">
+                <h3>5. Jak nazywa się gra typu battle royale od Epic Games?</h3>
+                <input type="radio" name="q5" value="a"> Fortnite<br>
+                <input type="radio" name="q5" value="b"> Apex Legends<br>
+                <input type="radio" name="q5" value="c"> PUBG<br>
+            </div>
+
+            <div class="question">
+                <h3>6. W której grze występuje postać Master Chief?</h3>
+                <input type="radio" name="q6" value="a"> Doom<br>
+                <input type="radio" name="q6" value="b"> Halo<br>
+                <input type="radio" name="q6" value="c"> Destiny<br>
+            </div>
+
+            <div class="question">
+                <h3>7. Która gra to survival horror z Raccoon City?</h3>
+                <input type="radio" name="q7" value="a"> Dead Space<br>
+                <input type="radio" name="q7" value="b"> Resident Evil<br>
+                <input type="radio" name="q7" value="c"> Silent Hill<br>
+            </div>
+
+            <div class="question">
+                <h3>8. Jaką broń nosi Doom Slayer?</h3>
+                <input type="radio" name="q8" value="a"> Łuk<br>
+                <input type="radio" name="q8" value="b"> Karabin plazmowy<br>
+                <input type="radio" name="q8" value="c"> Piła łańcuchowa<br>
+            </div>
+
+            <div class="question">
+                <h3>9. W której grze odwiedzamy Night City?</h3>
+                <input type="radio" name="q9" value="a"> Deus Ex<br>
+                <input type="radio" name="q9" value="b"> Cyberpunk 2077<br>
+                <input type="radio" name="q9" value="c"> Watch Dogs<br>
+            </div>
+
+            <div class="question">
+                <h3>10. Czym jest RTX w kartach graficznych?</h3>
+                <input type="radio" name="q10" value="a"> Ray Tracing<br>
+                <input type="radio" name="q10" value="b"> Real Time eXecution<br>
+                <input type="radio" name="q10" value="c"> Random Texture Xchange<br>
+            </div>
+
+            <div class="question">
+                <h3>11. Kto stworzył Minecrafta?</h3>
+                <input type="radio" name="q11" value="a"> Notch<br>
+                <input type="radio" name="q11" value="b"> Gabe Newell<br>
+                <input type="radio" name="q11" value="c"> Markus "Jeb" Persson<br>
+            </div>
+
+            <div class="question">
+                <h3>12. W której grze walczysz z bossami jak Malenia czy Radahn?</h3>
+                <input type="radio" name="q12" value="a"> Dark Souls III<br>
+                <input type="radio" name="q12" value="b"> Sekiro<br>
+                <input type="radio" name="q12" value="c"> Elden Ring<br>
+            </div>
+
+            <div class="question">
+                <h3>13. Co oznacza skrót MMORPG?</h3>
+                <input type="radio" name="q13" value="a"> Mega Multiplayer Role Playing Game<br>
+                <input type="radio" name="q13" value="b"> Massively Multiplayer Online RPG<br>
+                <input type="radio" name="q13" value="c"> Multiplayer Mode On RPG<br>
+            </div>
+
+            <div class="question">
+                <h3>14. W której grze znajduje się lokacja Los Santos?</h3>
+                <input type="radio" name="q14" value="a"> GTA V<br>
+                <input type="radio" name="q14" value="b"> Watch Dogs 2<br>
+                <input type="radio" name="q14" value="c"> Saints Row<br>
+            </div>
+
+            <div class="question">
+                <h3>15. W co gra się w e-sporcie najczęściej?</h3>
+                <input type="radio" name="q15" value="a"> The Sims<br>
+                <input type="radio" name="q15" value="b"> CS:GO / CS2<br>
+                <input type="radio" name="q15" value="c"> Stardew Valley<br>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Sprawdź wynik</button>
+        </form>
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        &copy; Autor: Artsiom Kastsiukevich 1KL 
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

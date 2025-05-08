@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>E-sport – gry, które zmieniły wszystko</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Stylizacja zdjęć */
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+    
+        .image-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        /* Tryby kolorystyczne */
+        body.dark-mode {
+            background-color: #2c2c2c;
+            color: white;
+        }
+    
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+    
+        /* Przycisk */
+        .button-common {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+    
+        .button-common:hover {
+            background-color: #45a049;
+        }
+    </style>    
+</head>
+<body class="background1">
+    <header>
+        <h1>E-sport – współczesne pole bitwy graczy</h1>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="strona1.html">najlepsza gra?</a>
+            <a href="strona2.html">E-sport</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="quiz.html">Quiz</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Co to jest e-sport?</h2>
+        <p>E-sport to zorganizowana rywalizacja graczy na najwyższym poziomie. Od małych turniejów LAN do wielomilionowych mistrzostw świata – to już nie tylko hobby, to zawód.</p>
+
+        <h3>Najważniejsze gry e-sportowe:</h3>
+        <ul>
+            <li><strong>Counter-Strike 2</strong> – taktyczny FPS, król e-sportu od lat.</li>
+            <li><strong>League of Legends</strong> – gra MOBA, z ogromną sceną turniejową.</li>
+            <li><strong>Dota 2</strong> – z najwyższymi pulami nagród na świecie.</li>
+            <li><strong>Valorant</strong> – świeża krew w taktycznych shooterach.</li>
+            <li><strong>Fortnite</strong> – battle royale z ogromną publicznością.</li>
+        </ul>
+
+        <h3>Wielkie pieniądze</h3>
+        <p>W 2021 roku pula nagród The International (Dota 2) wyniosła ponad 40 milionów dolarów. Najlepsi zawodnicy zarabiają miliony, mają sponsorów i własnych trenerów.</p>
+
+        <h3>Globalna scena</h3>
+        <p>Turnieje rozgrywane są na całym świecie: Katowice, Seul, Los Angeles, Kolonia. Transmisje oglądają miliony ludzi online, a finały odbywają się na stadionach.</p>
+
+        <h3>Polacy w e-sporcie</h3>
+        <p>Polska scena ma wielu reprezentantów – m.in. słynne drużyny jak Virtus.pro, a także turnieje Intel Extreme Masters w Katowicach, uznawane za „e-sportowe mistrzostwa świata”.</p>
+
+        <h3>Streamy i influencerzy</h3>
+        <p>Wielu graczy e-sportowych prowadzi streamy na Twitchu czy YouTube, gdzie dzielą się doświadczeniem, poradami i grają na żywo dla tysięcy widzów.</p>
+
+        <!-- Sekcja zdjęć -->
+        <h3>Zdjęcia z E-sportu</h3>
+        <div class="image-container">
+            <img src="ep1.png" alt="E-sport 1">
+            <img src="ep2.png" alt="E-sport 2">
+        </div>
+
+        <!-- Przycisk zmiany trybu (jasny/ciemny) -->
+        <button id="toggleModeButton" class="button-common">Zmień tryb</button>
+
+
+        <h2>Podsumowanie</h2>
+        <p>E-sport to już nie przyszłość – to teraźniejszość gamingu. To pokazuje, że granie może być pasją, zawodem i sposobem na życie.</p>
+    </main>
+    <footer>
+        &copy; Autor: Artsiom Kastsiukevich 1KL
+    </footer>
+    <script src="strona2.js"></script>
+</body>
+</html>

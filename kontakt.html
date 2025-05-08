@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz Kontaktowy</title>
+    <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+
+    <h1>Formularz Kontaktowy</h1>
+
+    <!-- Przycisk do zmiany trybu -->
+    <button id="modeToggle" onclick="toggleMode()">Zmień tryb</button>
+
+    <div class="form-container">
+        <div>
+            <label for="name">Imię i Nazwisko</label>
+            <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko">
+            <span id="nameError" class="error"></span>
+        </div>
+        <div>
+            <label for="email">Adres Email</label>
+            <input type="email" id="email" name="email" placeholder="Wpisz swój adres email">
+            <span id="emailError" class="error"></span>
+        </div>
+        <div>
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" rows="5" placeholder="Napisz swoją wiadomość"></textarea>
+            <span id="messageError" class="error"></span>
+        </div>
+        <button type="submit">Wyślij</button>
+    </div>
+
+    <script src="kontakt.js"></script>
+    <script>
+        // Funkcja do przełączania między trybem jasnym i ciemnym
+        function toggleMode() {
+            var body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>

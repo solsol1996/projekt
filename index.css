@@ -1,0 +1,29 @@
+/* Style dla trybu jasnego */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Style dla trybu ciemnego */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+/* Styl przycisku */
+.mode-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.mode-toggle-btn:hover {
+    background-color: #0056b3;
+}
